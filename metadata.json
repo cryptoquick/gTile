@@ -1,7 +1,7 @@
 {
   "uuid": "gTile@vibou",
-  "name": "gTile",
-  "description": "Tile windows on a grid.",
+  "name": "gTile40",
+  "description": "Tile windows on a grid. For existing gTile users with partial compatibility with Gnome 40",
   "version": 42,
   "shell-version": [
     "3.30",
@@ -9,7 +9,8 @@
     "3.34",
     "3.35",
     "3.36",
-    "3.38"
+    "3.38",
+    "40"
   ],
   "url": "https://github.com/gTile",
   "settings-schema": "org.gnome.shell.extensions.gtile",

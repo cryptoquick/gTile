@@ -1,5 +1,7 @@
 # gTile
 
+> Forked to support existing gTile users with partial support for Gnome 40. The config dialog doesn't work, but existing users should already have a config. Be sure to subscribe to <https://github.com/gTile/gTile/issues/205> for updates on this issue, as this fork is not intended to be updated, it's only to get existing users back up and running.
+
 Gnome-shell extension that improves window tiling capabilities of stock gnome-shell.
 
 gTile is used to moves/resize windows on a configurable grid scheme.
@@ -67,12 +69,12 @@ For configuration, please use the built-in preferences dialog (Gnome Tweak Tool 
   * Are defined in the preferences window (*Basic* tab)
   * Written as a comma-separated list of grid sizes like `8x7,3x2,4x6,4x7` (no spaces, columns first, then rows)
 * Resize presets:
-  * Are defined in the preferences window (*Reset presets* tab) 
+  * Are defined in the preferences window (*Reset presets* tab)
   * Format: grid size, top left corner tile, bottom right corner tile[, additional format variants]
-  * Coordinate origin: The tile at `0:0` always corresponds to the **top left**, no matter the grid size. 
+  * Coordinate origin: The tile at `0:0` always corresponds to the **top left**, no matter the grid size.
     In a `6x4` grid `5:3` is the bottom right tile
   * Format examples: `2x2 0:1 0:1` or `6x4 0:2 3:3, 0:0 3:3, 3x2 0:0 1:1` for multiple cyclable presets
-    
+
     ![gTile Preset specification illustrated](https://user-images.githubusercontent.com/11145016/57080232-61310a00-6cf2-11e9-9ba2-bdd55b62fd2c.png)
     <!--
     | columns → | index    | 0         | 1         | 2         |
@@ -118,7 +120,7 @@ There are 3 groups of pre-configured shortcuts, representing the following grid 
 * Grid 2x3 -> `Super`+`Control`
 * Grid 3x3 -> `Super`+`Shift`
 
-These "grid selectors" are then combined with a keypad number to define the window placement. 
+These "grid selectors" are then combined with a keypad number to define the window placement.
 
 Default shortcuts for `Super`+`Alt`+`[KP_1..KP_9]`
 
@@ -147,8 +149,8 @@ You can do auto tiling for all windows on screen
 2. Click on one of 2 autotile buttons, or
 3. Press one of `[1..9,0]` (total 10 available) for vertical columns autotiling, or `M` for "main" autotailing.
     * Press `M` multiple times to cycle through variants.
-    * Main variables are configurable. 
-    
+    * Main variables are configurable.
+
 [![Main Variants](https://user-images.githubusercontent.com/4830810/109255942-93123b00-77ba-11eb-8976-0069ab6e8f55.jpg
 )](https://user-images.githubusercontent.com/4830810/109256250-4418d580-77bb-11eb-8e50-4764a861cd85.mp4 "Main Variants")
 
@@ -175,7 +177,7 @@ Shortcut | Description
 `Super`+`Up` | Maximize
 `Super`+`Down` | Un-Maximize (return to size and position previous to maximizing)
 `Super`+`Left/Right` | left/right half of screen
-`Shift`+`Super`+`Up/Down/Left/Right` | move window to adjacent monitor/workspace 
+`Shift`+`Super`+`Up/Down/Left/Right` | move window to adjacent monitor/workspace
 
 
 ## Source code
